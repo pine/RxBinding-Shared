@@ -1,0 +1,4 @@
+ext {
+    kotlinVersion = '1.0.1-2'
+    rxJavaVersion = '1.1.2'
+}

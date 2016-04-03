@@ -1,0 +1,38 @@
+buildscript {
+    apply from: '../gradle/dependencies.gradle'
+
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.2.3'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+    }
+}
+
+apply plugin: 'kotlin'
+
+repositories {
+    jcenter()
+}
+
+def HOME = System.getenv('HOME')
+def ANDROID_HOME = '/Users/pine/Library/Android/sdk'
+
+dependencies {
+    compile gradleApi()
+    compile localGroovy()
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
+    compile "org.jetbrains.kotlin:kotlin-compiler-embeddable:$kotlinVersion"
+    compile "io.reactivex:rxjava:$rxJavaVersion"
+    compile files("$ANDROID_HOME/platforms/android-23/android.jar")
+    compile files("$ANDROID_HOME/extras/android/support/annotations/android-support-annotations.jar")
+    testCompile "junit:junit:4.12"
+    testCompile "org.jetbrains.kotlin:kotlin-test:$kotlinVersion"
+}
+
+sourceSets {
+    main.java.srcDirs += 'src/main/kotlin'
+    test.java.srcDirs += 'src/test/kotlin'
+}
