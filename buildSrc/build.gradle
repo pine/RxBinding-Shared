@@ -16,9 +16,12 @@ apply plugin: 'kotlin'
 repositories {
     jcenter()
 }
+def ANDROID_HOME = System.getenv('ANDROID_HOME')
 
-def HOME = System.getenv('HOME')
-def ANDROID_HOME = "$HOME/Library/Android/sdk"
+if (!ANDROID_HOME) {
+    def HOME = System.getenv('HOME')
+    ANDROID_HOME = "$HOME/Library/Android/sdk"
+}
 
 dependencies {
     compile gradleApi()
