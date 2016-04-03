@@ -16,7 +16,21 @@ dependencies {
 ```
 
 ## Usage
-TODO
+
+```kotlin
+val view = this.findViewById(R.id.foobarbaz)
+
+view.sharedClicks().subscribe {
+    // This line will be executed.
+    // You also can use it `clicks` method.
+    println("clicked #1")
+}
+
+view.sharedClicks().subscribe {
+    // This line also will be executed if you use `sharedClicks` method instead of `clicks` method.
+    println("clicked #2")
+}
+```
 
 ## Generate
 
