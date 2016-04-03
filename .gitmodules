@@ -1,0 +1,3 @@
+[submodule "RxBinding"]
+	path = RxBinding
+	url = git@github.com:JakeWharton/RxBinding.git
