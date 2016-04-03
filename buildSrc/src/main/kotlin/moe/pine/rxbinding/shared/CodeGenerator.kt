@@ -31,6 +31,7 @@ class CodeGenerator(
     fun generate(
             namespace: String,
             kotlinFilePath: String,
+            imports: List<String>,
             outputFilePath: String
     ): List<String> {
         val parser = KotlinScriptParser(this.classPaths)
@@ -40,14 +41,11 @@ class CodeGenerator(
 
         kotlinCode.append("package $namespace\n")
         kotlinCode.append("\n")
+        imports.forEach { kotlinCode.append("import $it\n") }
         kotlinCode.append("import moe.pine.rxbinding.shared.CachedObservable\n")
         kotlinCode.append("import moe.pine.rxbinding.shared.ObservableType\n")
         kotlinCode.append("import rx.Observable\n")
         kotlinCode.append("import rx.functions.*\n")
-        kotlinCode.append("import com.jakewharton.rxbinding.view.*\n")
-        kotlinCode.append("import com.jakewharton.rxbinding.widget.*\n")
-        kotlinCode.append("import android.view.*\n")
-        kotlinCode.append("import android.widget.*\n")
         kotlinCode.append("\n")
         kotlinCode.append(this.generateComment())
         kotlinCode.append(sharedFunctions.joinToString("\n\n"))

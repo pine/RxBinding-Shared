@@ -2,7 +2,7 @@ package moe.pine.rxbinding.shared
 
 /**
  * Auto generated
- * Created by CodeGenerator.kt on Apr 3, 2016 9:08:58 AM.
+ * Created by CodeGenerator.kt on Apr 3, 2016 10:47:34 AM.
  */
 enum class ObservableType {
     AbsListViewScrollEvents,

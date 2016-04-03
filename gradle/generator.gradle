@@ -31,6 +31,7 @@ task generate << {
         enumTypes.addAll(generator.generate(
                 "moe.pine.rxbinding.shared.view",
                 "$kotlinPath/view/Rx${it}.kt",
+                ['com.jakewharton.rxbinding.view.*', 'android.view.*'],
                 "$sharedKotlinPath/view/RxShared${it}.kt"
         ))
     }
@@ -39,6 +40,7 @@ task generate << {
         enumTypes.addAll(generator.generate(
                 "moe.pine.rxbinding.shared.widget",
                 "$kotlinPath/widget/Rx${it}.kt",
+                ['com.jakewharton.rxbinding.widget.*', 'android.widget.*', 'android.view.*'],
                 "$sharedKotlinPath/widget/RxShared${it}.kt"
         ))
     }
