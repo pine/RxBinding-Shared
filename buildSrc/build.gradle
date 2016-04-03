@@ -18,7 +18,7 @@ repositories {
 }
 
 def HOME = System.getenv('HOME')
-def ANDROID_HOME = '/Users/pine/Library/Android/sdk'
+def ANDROID_HOME = "$HOME/Library/Android/sdk"
 
 dependencies {
     compile gradleApi()
