@@ -17,5 +17,5 @@ android:
     - android-sdk-license-.+
 
 script:
-  - ./gradlew check
+  - ./gradlew check --info
 
