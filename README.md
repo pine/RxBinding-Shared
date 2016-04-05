@@ -42,7 +42,7 @@ $ ./gradlew generate
 ## Test
 
 ```
-$ ./gradlew clean test
+$ ./gradlew clean check
 ```
 
 ## License
