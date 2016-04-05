@@ -5,7 +5,7 @@ apply plugin: 'application'
 mainClassName = "moe.pine.rxbinding.shared.GeneratorTask"
 
 run {
-    args System.getProperty("user.dir")
+    workingDir System.getProperty("user.dir")
 }
 
 def ANDROID_HOME = System.getenv('ANDROID_HOME')

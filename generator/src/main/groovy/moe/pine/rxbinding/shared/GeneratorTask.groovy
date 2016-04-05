@@ -2,10 +2,9 @@ package moe.pine.rxbinding.shared
 
 class GeneratorTask {
     static main(args) {
-        def userDir = args[0]
-        def javaRootPaths = [userDir + '/RxBinding/rxbinding/src/main/java/']
-        def kotlinPath = userDir + '/RxBinding/rxbinding-kotlin/src/main/kotlin/com/jakewharton/rxbinding'
-        def sharedKotlinPath = userDir + '/rxbinding-shared-kotlin/src/main/kotlin/moe/pine/rxbinding/shared'
+        def javaRootPaths = ['./RxBinding/rxbinding/src/main/java/']
+        def kotlinPath = './RxBinding/rxbinding-kotlin/src/main/kotlin/com/jakewharton/rxbinding'
+        def sharedKotlinPath = './rxbinding-shared-kotlin/src/main/kotlin/moe/pine/rxbinding/shared'
 
         def views = ['View', 'MenuItem', 'ViewGroup']
         def widgets = [
