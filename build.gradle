@@ -14,6 +14,12 @@ buildscript {
     }
 }
 
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
 apply plugin: 'kotlin'
 
 task wrapper(type: Wrapper) {
@@ -35,4 +41,6 @@ buildtimetracker {
     }
 }
 
-apply from: './gradle/generator.gradle'
+task generate(dependsOn: [':generator:run']) {
+    description = "Generate `rxbinding-shared-kotlin` source code."
+}

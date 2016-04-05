@@ -2,6 +2,8 @@
     package="moe.pine.rxbinding.shared">
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="12"
         android:targetSdkVersion="23" />
+
+    <application />
 </manifest>

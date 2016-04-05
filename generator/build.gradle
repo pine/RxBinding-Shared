@@ -1,21 +1,13 @@
-buildscript {
-    apply from: '../gradle/dependencies.gradle'
-
-    repositories {
-        jcenter()
-    }
-
-    dependencies {
-        classpath 'com.android.tools.build:gradle:1.2.3'
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
-    }
-}
-
 apply plugin: 'kotlin'
+apply plugin: 'groovy'
+apply plugin: 'application'
 
-repositories {
-    jcenter()
+mainClassName = "moe.pine.rxbinding.shared.GeneratorTask"
+
+run {
+    args System.getProperty("user.dir")
 }
+
 def ANDROID_HOME = System.getenv('ANDROID_HOME')
 
 if (!ANDROID_HOME) {
@@ -24,7 +16,6 @@ if (!ANDROID_HOME) {
 }
 
 dependencies {
-    compile gradleApi()
     compile localGroovy()
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
     compile "org.jetbrains.kotlin:kotlin-compiler-embeddable:$kotlinVersion"
