@@ -9,7 +9,7 @@ import kotlin.test.assertTrue
 
 /**
  * Test for CachedObservable
- * Created by matsushita on 2016/01/21.
+ * Created by pine on 2016/01/21.
  */
 class CachedObservableTest {
     @Test
