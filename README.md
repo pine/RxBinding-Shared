@@ -32,6 +32,9 @@ view.sharedClicks().subscribe {
 }
 ```
 
+## Methods
+RxBinding-Shared has shared version methods in [RxBinding](https://github.com/JakeWharton/RxBinding). The methods have `shared` prefix (ex. sharedClicks, sharedTouchs) as Kotlin extensions.
+
 ## Generate
 
 ```
