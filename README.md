@@ -11,7 +11,7 @@ repositories {
 }
 
 dependencies {
-    compile 'moe.pine:rxbinding-shared:0.0.1' // Comming soon
+    compile 'moe.pine:rxbinding-shared:0.0.1'
 }
 ```
 
