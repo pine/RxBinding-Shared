@@ -11,7 +11,7 @@ repositories {
 }
 
 dependencies {
-    compile 'moe.pine.rxbinding.shared:rxbinding-shared-kotlin:0.0.2'
+    compile 'moe.pine.rxbinding.shared:rxbinding-shared-kotlin:0.0.3'
 }
 ```
 
