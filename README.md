@@ -1,6 +1,6 @@
 # RxBinding-Shared [![Bintray](https://img.shields.io/bintray/v/pinemz/maven/rxbinding-shared-kotlin.svg?style=flat-square)](https://bintray.com/pinemz/maven/rxbinding-shared-kotlin/view) [![Build Status](https://img.shields.io/travis/pine613/RxBinding-Shared/master.svg?style=flat-square)](https://travis-ci.org/pine613/RxBinding-Shared)
 
-RxBinding of stream shareable version
+[RxBinding](https://github.com/JakeWharton/RxBinding) of stream shareable version
 
 ## Getting Started
 Please type it in your build.gradle file.
@@ -11,7 +11,7 @@ repositories {
 }
 
 dependencies {
-    compile 'moe.pine.rxbinding.shared:rxbinding-shared-kotlin:0.0.1'
+    compile 'moe.pine.rxbinding.shared:rxbinding-shared-kotlin:0.0.2'
 }
 ```
 
