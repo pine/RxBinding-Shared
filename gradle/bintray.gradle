@@ -2,8 +2,8 @@ apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 apply plugin: 'maven-publish'
 
-def siteUrl = 'https://github.com/pine613/RxBinding-Shared'
-def gitUrl = 'https://github.com/pine613/RxBinding-Shared.git'
+def siteUrl = 'https://github.com/pine/RxBinding-Shared'
+def gitUrl = 'https://github.com/pine/RxBinding-Shared.git'
 
 bintray {
     user = project.hasProperty('bintrayUser') ? project.property('bintrayUser') : System.getenv('BINTRAY_USER')
@@ -20,7 +20,7 @@ bintray {
         desc = 'RxBinding of stream shareable version'
         licenses = ['Apache-2.0']
         vcsUrl = siteUrl
-        issueTrackerUrl = 'https://github.com/pine613/RxBinding-Shared/issues'
+        issueTrackerUrl = 'https://github.com/pine/RxBinding-Shared/issues'
         publicDownloadNumbers = true
 
         version {
