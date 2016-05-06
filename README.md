@@ -48,6 +48,12 @@ $ ./gradlew generate
 $ ./gradlew clean check
 ```
 
+## Release
+
+```
+$ ./gradlew clean assemble bintrayUpload
+```
+
 ## License
 
 ```
